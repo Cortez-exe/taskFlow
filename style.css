@@ -9,8 +9,8 @@ body{
     padding: 20px;
 }
 
-a{
-    color: green;
+.navbar a{
+    color: rgb(76, 15, 15);
 }
 
 .hero{
@@ -18,8 +18,20 @@ a{
     padding: 50px;
 }
 
+.hero h1{
+    color: red; 
+}
+
+.hero p, .hero a{
+    color: green; 
+}
+
 .btn{
     background-color: blue;
     color:white;
     padding:15px;
+}
+
+.card h3{
+    font-style: italic;
 }
