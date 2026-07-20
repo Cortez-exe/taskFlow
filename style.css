@@ -5,9 +5,24 @@ body{
 }
 
 .navbar{
-    background-color: yellow;
+    display: flex;
+    background: linear-gradient(90deg,rgba(178, 190, 237, 1) 9%, rgba(203, 146, 232, 1) 65%, rgba(255, 255, 255, 1) 100%, rgba(255, 255, 255, 1) 90%);
     padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
 }
+
+.nav-links{
+    display: flex;
+    gap:100px;
+}
+
+.nav-links li, .nav-links a{
+    list-style-type: none;
+    text-decoration: none;
+}
+
 
 .navbar a{
     color: rgb(76, 15, 15);
