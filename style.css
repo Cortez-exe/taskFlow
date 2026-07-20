@@ -1,0 +1,25 @@
+body{
+    background-color: rgb(195, 188, 188);
+    font-family: 'Arial', sans-serif;
+    color: black;
+}
+
+.navbar{
+    background-color: yellow;
+    padding: 20px;
+}
+
+a{
+    color: green;
+}
+
+.hero{
+    background-color: rgb(239, 219, 219);
+    padding: 50px;
+}
+
+.btn{
+    background-color: blue;
+    color:white;
+    padding:15px;
+}
