@@ -10,6 +10,17 @@ body{
     color: black;
 }
 
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.upgrade-card{
+    margin-bottom: 30px;
+    border: 5px red;
+}
+
 .app{
     display: flex;
 }
@@ -39,9 +50,22 @@ body{
 }
 
 section{
+    height: 500px;
     padding: 80px;
     margin: 80px;
     border: 5px solid red;
+}
+
+section h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.hero-image-container{
+    border: 5px red;
+    border-width: 5px;
 }
 
 .hero h1{
@@ -52,14 +76,51 @@ section{
     color: green; 
 }
 
+.hero-message{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px 50px 0px;
+}
+
 .btn{
     background-color: blue;
     color:white;
     padding:15px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
 }
 
-.card h3{
+.cards-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card{
+    border: 5px solid #080000;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.4)
+}
+
+.price-card{
+    border: 5px solid #080000;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: white;
+    height: 250px;
+}
+
+.card h3, .price-card h3{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
     font-style: italic;
 }
+
+
+
+
+
 
 
