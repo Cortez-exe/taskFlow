@@ -11,9 +11,13 @@
 }
 
 .side-container{
-    width: 100%;
-    max-width: 300px;
     margin: 0px 15px;
+    flex-basis: 250px;
+    flex-shrink: 0;
+}
+
+.main-app{
+    flex-grow: 1;
 }
 
 body{
@@ -25,7 +29,7 @@ body{
 .sidebar{
     display: flex;
     flex-direction: column;
-    border-width: 5px;
+    border: 5px solid red;
     border-style: solid;
     align-items: center;
 }
@@ -75,10 +79,6 @@ section h2{
     margin-bottom: 50px;
 }
 
-.hero-image-container{
-    border-width: 5px;
-}
-
 .hero h1{
     color: red; 
 }
@@ -115,12 +115,8 @@ section h2{
 }
 
 .price-card{
-    border: 5px solid #080000;
-    border-radius: 15px;
-    padding: 20px;
     background-color: white;
     height: 250px;
-    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.4)
 }
 
 .card h3, .price-card h3{
