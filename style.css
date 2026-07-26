@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+:root{
+    --primary-color: crimson;
+    --secondary-color:#FF6584;
+    --text-color: white;
+    --background-color: red;
+    --card-radius: 15px;
+    --shadow: 0px 10px 15px rgba(0, 0, 0, 0.5);
+    --transition: 0.5s;
+}
+
 .container{
     width: 100%;
     max-width: 1200px;
@@ -47,7 +57,7 @@ body{
     background-color: red;
     color: white;
     padding: 5px;
-    border-radius: 10px;
+    border-radius: var(--card-radius);
     position: absolute;
     top: -20px;
     right: -20px;
@@ -88,11 +98,11 @@ body{
 
 .navbar a{
     color: rgb(76, 15, 15);
-    transition: 0.5s;
+    transition: var(--transition);
 }
 
 .navbar a:hover{
-    background-color: rgb(76, 15, 15);
+    background-color: var(--primary-color);
     color: white;
 }
 
@@ -123,16 +133,16 @@ section h2{
 }
 
 .btn{
-    background-color: blue;
+    background-color: var(--primary-color);
     color:white;
     padding:15px;
-    border-radius: 10px;
-    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
-    transition: 0.5s;
+    border-radius: var(--card-radius);
+    box-shadow: var(--shadow);
+    transition: var(--transition);
 }
 
 .btn:hover{
-    background-color: darkblue;
+    background-color: var(--secondary-color);
     transform: scale(1.1);
 }
 
@@ -145,20 +155,20 @@ section h2{
 
 .card{
     border: 5px solid #080000;
-    border-radius: 15px;
+    border-radius: var(--card-radius);
     padding: 20px;
-    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.4);
+    box-shadow: var(--shadow);
     flex: 1;
-    transition: 0.5s;
+    transition: var(--transition);
 }
 
 .card:hover{
     transform: translateY(-10px);
-    box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.8);
+    box-shadow: var(--shadow);
 }
 
 .price-card{
-    background-color: white;
+    background-color: var(--primary-color);
     height: 250px;
 }
 
