@@ -232,13 +232,23 @@ section h2 {
 }
 
 .card:hover {
-    transform: translateY(-10px);
+    transform: 
+        translateY(-10px)
+        rotate(2deg)
+        scale(1.05);
+
 }
 
 .card h3 {
     margin-bottom: 50px;
     text-align: center;
     font-style: italic;
+}
+
+.product-card{
+    transform: 
+    rotate(5deg)
+    scale(0.95);
 }
 
 /* =========================================
