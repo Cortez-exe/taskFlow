@@ -290,19 +290,62 @@ section h2 {
     display: grid;
 
     grid-template-columns: 150px 1fr;
-    grid-template-rows: auto 500px auto;
+    grid-template-rows: 
+    auto 
+    500px 
+    auto;
+
+    gap: 20px;
+
+    grid-template-areas:
+        "header header"
+        "sidebar content"
+        "sidebar stats"
+        "sidebar footer";
 }
 
-.dashboard-grid-1{
+.dashboard-header{
+    grid-area: header;
+}
+.dashboard-sidebar {
+    grid-area: sidebar;
+}
+.dashboard-content{
+    grid-area: content;
+}
+.dashboard-stats{
+    grid-area: stats;
+}
+.dashboard-footer{
+    grid-area: footer;
+}
+
+
+/* =========================================
+   GALLERY
+========================================= */
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    grid-auto-flow: dense;
+}
+
+.featured{
+    grid-row: span 2;
     grid-column: span 2;
-}
-
-.dashboard-grid-2{
     min-height: 500px;
 }
 
-.dashboard-grid-3{
-    height: 500px;
+/* =========================================
+   PRODUCTS
+========================================= */
+
+.products-grid{
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 /* =========================================
